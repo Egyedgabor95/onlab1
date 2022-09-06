@@ -4,6 +4,8 @@ import java.util.List;
 
 public class TeamEntity {
 
+    private int id;
+
     private String name;
 
     private List<PlayerEntity> squad;
@@ -11,7 +13,7 @@ public class TeamEntity {
     private List<PlayerEntity> starterEleven;
     private List<PlayerEntity> substitutions;
 
-    private int value;
+    private double value;
 
     private CoachEntity coach;
 
