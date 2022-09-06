@@ -1,0 +1,19 @@
+package com.example.onlab_egyed_gabor.data.mapper;
+
+import com.example.onlab_egyed_gabor.controller.dto.GameDTO;
+import com.example.onlab_egyed_gabor.data.entities.GameEntity;
+import org.mapstruct.Mapper;
+
+import java.util.List;
+
+@Mapper(componentModel = "spring")
+public interface GameMapper {
+
+    GameEntity gameDTOToGameEntity(GameDTO gameDTO);
+
+    GameDTO gameEntityToGameDTO(GameEntity gameEntity);
+
+    List<GameEntity> gameDTOListToGameEntityList(List<GameDTO> gameDTOS);
+
+    List<GameDTO> gameEntityListToGameDTOList(List<GameEntity> gameEntities);
+}
