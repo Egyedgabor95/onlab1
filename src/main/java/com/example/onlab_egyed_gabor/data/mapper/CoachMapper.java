@@ -9,8 +9,11 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface CoachMapper {
 
-    CoachEntity coachDTOToCoachEntity (CoachDTO coachDTO);
-    CoachDTO coachEntityToCoachDTO (CoachEntity coachEntity);
-    List<CoachEntity> coachDTOListToCoachEntityList (List<CoachDTO> coachDTOs);
-    List<CoachDTO> coachEntityListToCoachDTOList (List<CoachEntity> coachEntities);
+    CoachEntity coachDTOToCoachEntity(CoachDTO coachDTO);
+
+    CoachDTO coachEntityToCoachDTO(CoachEntity coachEntity);
+
+    List<CoachEntity> coachDTOListToCoachEntityList(List<CoachDTO> coachDTOs);
+
+    List<CoachDTO> coachEntityListToCoachDTOList(List<CoachEntity> coachEntities);
 }
