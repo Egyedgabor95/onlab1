@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class GameEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;

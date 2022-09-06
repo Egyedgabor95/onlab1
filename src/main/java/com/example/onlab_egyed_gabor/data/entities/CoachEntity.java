@@ -12,14 +12,11 @@ import javax.persistence.Id;
 @Getter
 @Setter
 public class CoachEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private String name;
     private int experience;
-
     private int value;
     private int salary;
 }

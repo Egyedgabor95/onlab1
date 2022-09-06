@@ -12,9 +12,7 @@ public class TeamEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private String name;
-
     @OneToMany
     private List<PlayerEntity> squad;
     @OneToMany
@@ -23,18 +21,13 @@ public class TeamEntity {
     private List<PlayerEntity> starterEleven;
     @OneToMany
     private List<PlayerEntity> substitutions;
-
     private double value;
-
     @OneToOne
     private CoachEntity coach;
-
     private int points;
     private int goalsScored;
     private int goalsSuffered;
-
     @OneToMany
     private List<TeamEntity> playedWithTeamsList;
-
     private String managerName;
 }

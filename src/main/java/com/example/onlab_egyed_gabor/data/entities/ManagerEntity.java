@@ -13,7 +13,6 @@ public class ManagerEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String name;
     private int age;
-
     @OneToOne
     private TeamEntity team;
     private int happiness;
