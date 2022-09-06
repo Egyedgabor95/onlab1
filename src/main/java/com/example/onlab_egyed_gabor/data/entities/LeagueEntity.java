@@ -4,5 +4,9 @@ import java.util.List;
 
 public class LeagueEntity {
 
-    List<TeamEntity> teams;
+    private int id;
+
+    private List<TeamEntity> teams;
+    private List<ManagerEntity> managers;
+    private List<RefereeEntity> referees;
 }

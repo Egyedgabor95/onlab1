@@ -8,12 +8,12 @@ public class PlayerEntity {
 
     private String name;
     private Position position;
-    private String teamName;
     private int playerNumber;
 
     private double value;
     private double salary;
     private int contractDeadline;
+    private int age;
 
     private int skillPoint;
     private int health;

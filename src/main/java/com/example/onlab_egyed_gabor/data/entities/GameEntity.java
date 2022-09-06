@@ -5,6 +5,6 @@ public class GameEntity {
     private int id;
 
     private TeamEntity home;
-
     private TeamEntity away;
+    private RefereeEntity referee;
 }

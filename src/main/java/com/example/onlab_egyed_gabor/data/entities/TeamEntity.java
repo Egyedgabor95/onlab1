@@ -22,4 +22,6 @@ public class TeamEntity {
     private int goalsSuffered;
 
     private List<TeamEntity> playedWithTeamsList;
+
+    private String managerName;
 }
