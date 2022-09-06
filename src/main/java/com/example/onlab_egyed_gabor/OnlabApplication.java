@@ -1,13 +1,13 @@
-package com.example.spring_basic;
+package com.example.onlab_egyed_gabor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBasicApplication {
+public class OnlabApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBasicApplication.class, args);
+		SpringApplication.run(OnlabApplication.class, args);
 	}
 
 }
