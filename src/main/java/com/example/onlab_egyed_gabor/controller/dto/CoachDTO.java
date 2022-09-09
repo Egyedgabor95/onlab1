@@ -1,5 +1,10 @@
 package com.example.onlab_egyed_gabor.controller.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CoachDTO {
     private int id;
     private String name;
