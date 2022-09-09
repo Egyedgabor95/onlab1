@@ -18,6 +18,7 @@ public class CoachService implements ICoachService {
     private CoachRepository coachRepository;
     @Autowired
     private CoachMapper coachMapper;
+
     @Override
     public void create(CoachDTO coachDTO) {
         coachRepository.save(coachMapper.coachDTOToCoachEntity(coachDTO));
@@ -41,6 +42,6 @@ public class CoachService implements ICoachService {
 
     @Override
     public CoachEntity findById(int id) {
-        return coachRepository.findById(id).orElseThrow(()-> new RuntimeException("Cannot find Coach with this id"));
+        return coachRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find Coach with this id"));
     }
 }
