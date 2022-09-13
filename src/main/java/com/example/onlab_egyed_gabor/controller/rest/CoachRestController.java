@@ -17,24 +17,24 @@ public class CoachRestController {
     private CoachService coachService;
 
     @PostMapping
-    public List<CoachEntity> create(@RequestBody CoachDTO coachDTO) {
+    public List<CoachDTO> create(@RequestBody CoachDTO coachDTO) {
         coachService.create(coachDTO);
         return coachService.read();
     }
 
     @GetMapping
-    public List<CoachEntity> read() {
+    public List<CoachDTO> read() {
         return coachService.read();
     }
 
     @PutMapping("/{id}")
-    public List<CoachEntity> update(@PathVariable int id, @RequestBody CoachDTO coachDTO) {
+    public List<CoachDTO> update(@PathVariable int id, @RequestBody CoachDTO coachDTO) {
         coachService.update(id, coachDTO);
         return coachService.read();
     }
 
     @DeleteMapping("/{id}")
-    public List<CoachEntity> delete(@PathVariable int id) {
+    public List<CoachDTO> delete(@PathVariable int id) {
         coachService.delete(id);
         return coachService.read();
     }
