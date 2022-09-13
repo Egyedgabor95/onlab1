@@ -21,6 +21,5 @@ public interface LeagueMapper {
 
     List<LeagueDTO> leagueEntityListToLeagueDTOList(List<LeagueEntity> leagueEntities);
 
-    @Mapping(target = "id", ignore = true)
     LeagueEntity update(@MappingTarget LeagueEntity leagueEntity, LeagueDTO leagueDTO);
 }

@@ -21,6 +21,5 @@ public interface CoachMapper {
 
     List<CoachDTO> coachEntityListToCoachDTOList(List<CoachEntity> coachEntities);
 
-    @Mapping(target = "id", ignore = true)
     CoachEntity update(@MappingTarget CoachEntity coachEntity, CoachDTO coachDTO);
 }

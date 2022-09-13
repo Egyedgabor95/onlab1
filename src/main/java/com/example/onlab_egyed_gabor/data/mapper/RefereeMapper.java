@@ -21,6 +21,5 @@ public interface RefereeMapper {
 
     List<RefereeEntity> refereeDTOListToRefereeEntityList(List<RefereeDTO> refereeDTOS);
 
-    @Mapping(target = "id", ignore = true)
     RefereeEntity update(@MappingTarget RefereeEntity refereeEntity, RefereeDTO refereeDTO);
 }

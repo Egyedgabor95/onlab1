@@ -21,6 +21,5 @@ public interface ManagerMapper {
 
     List<ManagerDTO> managerEntityListToManagerDTOList(List<ManagerEntity> managerEntities);
 
-    @Mapping(target = "id", ignore = true)
     ManagerEntity update(@MappingTarget ManagerEntity managerEntity, ManagerDTO managerDTO);
 }

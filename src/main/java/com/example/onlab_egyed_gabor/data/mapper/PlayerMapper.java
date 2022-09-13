@@ -21,6 +21,5 @@ public interface PlayerMapper {
 
     List<PlayerDTO> playerEntityListToPlayerDTOList(List<PlayerEntity> playerEntities);
 
-    @Mapping(target = "id", ignore = true)
     PlayerEntity update(@MappingTarget PlayerEntity playerEntity, PlayerDTO playerDTO);
 }

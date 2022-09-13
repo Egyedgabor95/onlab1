@@ -23,6 +23,5 @@ public interface TeamMapper {
 
     List<TeamDTO> teamEntityListToTeamDTOList(List<TeamEntity> teamEntities);
 
-    @Mapping(target = "id", ignore = true)
     TeamEntity update(@MappingTarget TeamEntity teamEntity, TeamDTO teamDTO);
 }
