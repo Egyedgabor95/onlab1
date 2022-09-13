@@ -9,11 +9,11 @@ public interface IGameService {
 
     void create(GameDTO gameDTO);
 
-    List<GameEntity> read();
+    List<GameDTO> read();
 
     void update(int targetId, GameDTO source);
 
     void delete(int id);
 
-    GameEntity findById(int id);
+    GameDTO findById(int id);
 }
