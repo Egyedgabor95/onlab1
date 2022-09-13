@@ -9,11 +9,11 @@ public interface ITeamService {
 
     void create(TeamDTO teamDTO);
 
-    List<TeamEntity> read();
+    List<TeamDTO> read();
 
     void update(int targetId, TeamDTO source);
 
     void delete(int id);
 
-    TeamEntity findById(int id);
+    TeamDTO findById(int id);
 }

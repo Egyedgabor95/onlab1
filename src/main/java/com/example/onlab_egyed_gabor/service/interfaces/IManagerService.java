@@ -9,11 +9,11 @@ public interface IManagerService {
 
     void create(ManagerDTO managerDTO);
 
-    List<ManagerEntity> read();
+    List<ManagerDTO> read();
 
     void update(int targetId, ManagerDTO source);
 
     void delete(int id);
 
-    ManagerEntity findById(int id);
+    ManagerDTO findById(int id);
 }

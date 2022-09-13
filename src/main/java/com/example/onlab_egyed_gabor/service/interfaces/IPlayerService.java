@@ -9,11 +9,11 @@ public interface IPlayerService {
 
     void create(PlayerDTO playerDTO);
 
-    List<PlayerEntity> read();
+    List<PlayerDTO> read();
 
     void update(int targetId, PlayerDTO source);
 
     void delete(int id);
 
-    PlayerEntity findById(int id);
+    PlayerDTO findById(int id);
 }

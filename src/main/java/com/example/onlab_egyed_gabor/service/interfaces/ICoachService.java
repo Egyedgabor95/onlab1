@@ -9,11 +9,11 @@ public interface ICoachService {
 
     void create(CoachDTO coachDTO);
 
-    List<CoachEntity> read();
+    List<CoachDTO> read();
 
     void update(int targetId, CoachDTO source);
 
     void delete(int id);
 
-    CoachEntity findById(int id);
+    CoachDTO findById(int id);
 }

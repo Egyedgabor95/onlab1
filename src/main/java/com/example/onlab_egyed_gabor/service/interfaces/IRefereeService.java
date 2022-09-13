@@ -9,11 +9,11 @@ public interface IRefereeService {
 
     void create(RefereeDTO refereeDTO);
 
-    List<RefereeEntity> read();
+    List<RefereeDTO> read();
 
     void update(int targetId, RefereeDTO source);
 
     void delete(int id);
 
-    RefereeEntity findById(int id);
+    RefereeDTO findById(int id);
 }

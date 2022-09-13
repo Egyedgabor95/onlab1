@@ -9,11 +9,11 @@ public interface ILeagueService {
 
     void create(LeagueDTO leagueDTO);
 
-    List<LeagueEntity> read();
+    List<LeagueDTO> read();
 
     void update(int targetId, LeagueDTO source);
 
     void delete(int id);
 
-    LeagueEntity findById(int id);
+    LeagueDTO findById(int id);
 }
