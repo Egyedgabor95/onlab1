@@ -25,23 +25,27 @@ public class CoachService implements ICoachService {
     }
 
     @Override
-    public List<CoachEntity> read() {
-        return coachRepository.findAll();
+    public List<CoachDTO> read() {
+        return coachMapper.coachEntityListToCoachDTOList(coachRepository.findAll());
     }
 
     @Transactional
     @Override
     public void update(int targetId, CoachDTO source) {
-        coachMapper.update(findById(targetId), source);
+        coachMapper.update(findEntityById(targetId), source);
     }
 
     @Override
     public void delete(int id) {
-        coachRepository.delete(findById(id));
+        coachRepository.delete(findEntityById(id));
     }
 
     @Override
-    public CoachEntity findById(int id) {
+    public CoachDTO findById(int id) {
+        return coachMapper.coachEntityToCoachDTO(coachRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find Coach with this id")));
+    }
+
+    private CoachEntity findEntityById(int id) {
         return coachRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find Coach with this id"));
     }
 }
