@@ -1,7 +1,11 @@
 package com.example.onlab_egyed_gabor.controller.dto;
 
 import com.example.onlab_egyed_gabor.data.enums.Position;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class PlayerDTO {
     private int id;
     private String name;
