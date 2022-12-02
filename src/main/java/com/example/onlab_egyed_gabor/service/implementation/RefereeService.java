@@ -24,9 +24,9 @@ public class RefereeService implements IRefereeService {
     private RefereeMapper refereeMapper;
 
     @Override
-    public RefereeEntity create(RefereeDTO RefereeDTO) {
-        log.debug("RefereeService : create, RefereeDTO = {}", RefereeDTO);
-        return refereeRepository.save(refereeMapper.refereeDTOToRefereeEntity(RefereeDTO));
+    public RefereeEntity create(RefereeDTO refereeDTO) {
+        log.debug("RefereeService : create, RefereeDTO = {}", refereeDTO);
+        return refereeRepository.save(refereeMapper.refereeDTOToRefereeEntity(refereeDTO));
     }
 
     @Override

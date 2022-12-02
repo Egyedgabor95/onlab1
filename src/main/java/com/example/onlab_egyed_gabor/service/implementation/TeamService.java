@@ -24,9 +24,9 @@ public class TeamService implements ITeamService {
     private TeamMapper teamMapper;
 
     @Override
-    public TeamEntity create(TeamDTO TeamDTO) {
-        log.debug("TeamService : create, TeamDTO = {}", TeamDTO);
-        return teamRepository.save(teamMapper.teamDTOToTeamEntity(TeamDTO));
+    public TeamEntity create(TeamDTO teamDTO) {
+        log.debug("TeamService : create, TeamDTO = {}", teamDTO);
+        return teamRepository.save(teamMapper.teamDTOToTeamEntity(teamDTO));
     }
 
     @Override
