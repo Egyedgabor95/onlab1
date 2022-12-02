@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 @Service
 public class CoachService implements ICoachService {
 
@@ -29,7 +30,6 @@ public class CoachService implements ICoachService {
         return coachMapper.coachEntityListToCoachDTOList(coachRepository.findAll());
     }
 
-    @Transactional
     @Override
     public void update(int targetId, CoachDTO source) {
         coachMapper.update(findEntityById(targetId), source);
