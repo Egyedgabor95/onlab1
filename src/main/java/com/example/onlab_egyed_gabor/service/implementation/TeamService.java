@@ -7,23 +7,25 @@ import com.example.onlab_egyed_gabor.data.repository.TeamRepository;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
-@Getter
+@Transactional
 public class TeamService {
     @Autowired
     private TeamRepository teamRepository;
 
+    @Autowired
     private TeamMapper teamMapper;
 
     public void create(TeamDTO teamDTO) {
-        getTeamRepository().save(getTeamMapper().teamDTOToTeamEntity(teamDTO));
+        teamRepository.save(teamMapper.teamDTOToTeamEntity(teamDTO));
     }
 
     public List<TeamEntity> read() {
-        return getTeamRepository().findAll();
+        return teamRepository.findAll();
     }
 
     public void update(TeamDTO newTeam) {
@@ -31,6 +33,6 @@ public class TeamService {
     }
 
     public void delete(TeamDTO teamDTO) {
-        getTeamRepository().deleteById(getTeamMapper().teamDTOToTeamEntity(teamDTO).getId());
+        teamRepository.deleteById(teamMapper.teamDTOToTeamEntity(teamDTO).getId());
     }
 }
