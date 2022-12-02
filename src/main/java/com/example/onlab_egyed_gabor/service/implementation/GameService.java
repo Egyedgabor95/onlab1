@@ -24,9 +24,9 @@ public class GameService implements IGameService {
     private GameMapper gameMapper;
 
     @Override
-    public void create(GameDTO gameDTO) {
+    public GameEntity create(GameDTO gameDTO) {
         log.debug("GameService : create, gameDTO = {}", gameDTO);
-        gameRepository.save(gameMapper.gameDTOToGameEntity(gameDTO));
+        return gameRepository.save(gameMapper.gameDTOToGameEntity(gameDTO));
     }
 
     @Override
