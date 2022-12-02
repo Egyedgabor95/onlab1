@@ -11,9 +11,9 @@ public interface IRefereeService {
 
     List<RefereeDTO> read();
 
-    void update(int targetId, RefereeDTO source);
+    void update(Long targetId, RefereeDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    RefereeDTO findById(int id);
+    RefereeDTO findById(Long id);
 }

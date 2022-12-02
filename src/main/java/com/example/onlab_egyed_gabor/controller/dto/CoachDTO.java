@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CoachDTO {
-    private int id;
+    private Long id;
     private String name;
     private int experience;
     private int value;

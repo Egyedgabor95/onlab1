@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface ICoachService {
 
-    void create(CoachDTO coachDTO);
+    CoachEntity create(CoachDTO coachDTO);
 
     List<CoachDTO> read();
 
-    void update(int targetId, CoachDTO source);
+    void update(Long targetId, CoachDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    CoachDTO findById(int id);
+    CoachDTO findById(Long id);
 }

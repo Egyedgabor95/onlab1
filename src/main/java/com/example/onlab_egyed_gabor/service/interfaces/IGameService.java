@@ -11,9 +11,9 @@ public interface IGameService {
 
     List<GameDTO> read();
 
-    void update(int targetId, GameDTO source);
+    void update(Long targetId, GameDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    GameDTO findById(int id);
+    GameDTO findById(Long id);
 }

@@ -11,9 +11,9 @@ public interface IManagerService {
 
     List<ManagerDTO> read();
 
-    void update(int targetId, ManagerDTO source);
+    void update(Long targetId, ManagerDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    ManagerDTO findById(int id);
+    ManagerDTO findById(Long id);
 }

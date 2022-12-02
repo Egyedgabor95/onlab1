@@ -8,7 +8,7 @@ import java.util.List;
 @Getter
 @Setter
 public class TeamDTO {
-    private int id;
+    private Long id;
     private String name;
     private List<PlayerDTO> squad;
     private List<PlayerDTO> playingSquad;

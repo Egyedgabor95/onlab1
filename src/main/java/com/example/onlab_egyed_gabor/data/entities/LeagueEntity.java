@@ -11,7 +11,7 @@ import java.util.List;
 public class LeagueEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @OneToMany
     private List<TeamEntity> teams;
     @OneToMany

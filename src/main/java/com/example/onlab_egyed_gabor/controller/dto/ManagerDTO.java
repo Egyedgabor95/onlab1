@@ -6,6 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ManagerDTO {
+
+    private Long id;
     private String name;
     private int age;
     private TeamDTO team;

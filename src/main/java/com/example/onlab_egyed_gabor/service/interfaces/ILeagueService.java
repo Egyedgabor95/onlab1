@@ -11,9 +11,9 @@ public interface ILeagueService {
 
     List<LeagueDTO> read();
 
-    void update(int targetId, LeagueDTO source);
+    void update(Long targetId, LeagueDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    LeagueDTO findById(int id);
+    LeagueDTO findById(Long id);
 }

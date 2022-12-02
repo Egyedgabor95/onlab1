@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class CoachEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String name;
     private int experience;
     private int value;

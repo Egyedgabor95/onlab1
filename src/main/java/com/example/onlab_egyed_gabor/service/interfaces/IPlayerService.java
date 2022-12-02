@@ -11,9 +11,9 @@ public interface IPlayerService {
 
     List<PlayerDTO> read();
 
-    void update(int targetId, PlayerDTO source);
+    void update(Long targetId, PlayerDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    PlayerDTO findById(int id);
+    PlayerDTO findById(Long id);
 }

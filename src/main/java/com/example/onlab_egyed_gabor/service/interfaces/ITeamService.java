@@ -11,9 +11,9 @@ public interface ITeamService {
 
     List<TeamDTO> read();
 
-    void update(int targetId, TeamDTO source);
+    void update(Long targetId, TeamDTO source);
 
-    void delete(int id);
+    void delete(Long id);
 
-    TeamDTO findById(int id);
+    TeamDTO findById(Long id);
 }

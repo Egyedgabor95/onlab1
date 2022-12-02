@@ -11,7 +11,7 @@ import java.util.List;
 public class TeamEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String name;
     @OneToMany
     private List<PlayerEntity> squad;

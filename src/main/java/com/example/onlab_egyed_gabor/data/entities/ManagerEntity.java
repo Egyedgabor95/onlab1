@@ -11,6 +11,7 @@ import javax.persistence.*;
 public class ManagerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String name;
     private int age;
     @OneToOne

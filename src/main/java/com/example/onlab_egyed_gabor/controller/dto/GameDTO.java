@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class GameDTO {
-    private int id;
+    private Long id;
     private TeamDTO home;
     private TeamDTO away;
     private RefereeDTO referee;

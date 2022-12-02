@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class GameEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @ManyToOne
     private TeamEntity home;
     @ManyToOne
