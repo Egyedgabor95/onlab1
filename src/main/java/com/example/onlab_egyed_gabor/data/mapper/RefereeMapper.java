@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 @Mapper(componentModel = "spring")
 public interface RefereeMapper {
-
+    @Mapping(target = "id", ignore = true)
     RefereeDTO refereeEntityToRefereeDTO(RefereeEntity refereeEntity);
 
     RefereeEntity refereeDTOToRefereeEntity(RefereeDTO refereeDTO);
@@ -20,6 +20,6 @@ public interface RefereeMapper {
     List<RefereeDTO> refereeEntityListToRefereeDTOList(List<RefereeEntity> refereeEntities);
 
     List<RefereeEntity> refereeDTOListToRefereeEntityList(List<RefereeDTO> refereeDTOS);
-
+    @Mapping(target = "id", ignore = true)
     RefereeEntity update(@MappingTarget RefereeEntity refereeEntity, RefereeDTO refereeDTO);
 }

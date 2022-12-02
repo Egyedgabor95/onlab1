@@ -13,6 +13,7 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface CoachMapper {
 
+    @Mapping(target = "id", ignore = true)
     CoachEntity coachDTOToCoachEntity(CoachDTO coachDTO);
 
     CoachDTO coachEntityToCoachDTO(CoachEntity coachEntity);
@@ -20,6 +21,6 @@ public interface CoachMapper {
     List<CoachEntity> coachDTOListToCoachEntityList(List<CoachDTO> coachDTOs);
 
     List<CoachDTO> coachEntityListToCoachDTOList(List<CoachEntity> coachEntities);
-
+    @Mapping(target = "id", ignore = true)
     CoachEntity update(@MappingTarget CoachEntity coachEntity, CoachDTO coachDTO);
 }

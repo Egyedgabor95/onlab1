@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 @Mapper(componentModel = "spring")
 public interface PlayerMapper {
-
+    @Mapping(target = "id", ignore = true)
     PlayerEntity playerDTOToPlayerEntity(PlayerDTO playerDTO);
 
     PlayerDTO playerEntityToPlayerDTO(PlayerEntity playerEntity);
@@ -20,6 +20,6 @@ public interface PlayerMapper {
     List<PlayerEntity> playerDTOListToPlayerEntityList(List<PlayerDTO> playerDTO);
 
     List<PlayerDTO> playerEntityListToPlayerDTOList(List<PlayerEntity> playerEntities);
-
+    @Mapping(target = "id", ignore = true)
     PlayerEntity update(@MappingTarget PlayerEntity playerEntity, PlayerDTO playerDTO);
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 @Mapper(componentModel = "spring")
 public interface GameMapper {
-
+    @Mapping(target = "id", ignore = true)
     GameEntity gameDTOToGameEntity(GameDTO gameDTO);
 
     GameDTO gameEntityToGameDTO(GameEntity gameEntity);

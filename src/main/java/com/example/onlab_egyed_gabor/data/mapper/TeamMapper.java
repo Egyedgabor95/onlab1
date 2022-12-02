@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 @Mapper(componentModel = "spring")
 public interface TeamMapper {
-
+    @Mapping(target = "id", ignore = true)
     TeamDTO teamEntityToTeamDTO(TeamEntity teamEntity);
 
     TeamEntity teamDTOToTeamEntity(TeamDTO teamDTO);
@@ -22,6 +22,6 @@ public interface TeamMapper {
     List<TeamEntity> teamDTOListToTeamEntityList(List<TeamDTO> teamDTOS);
 
     List<TeamDTO> teamEntityListToTeamDTOList(List<TeamEntity> teamEntities);
-
+    @Mapping(target = "id", ignore = true)
     TeamEntity update(@MappingTarget TeamEntity teamEntity, TeamDTO teamDTO);
 }

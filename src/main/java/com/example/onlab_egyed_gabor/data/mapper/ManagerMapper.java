@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 @Mapper(componentModel = "spring")
 public interface ManagerMapper {
-
+    @Mapping(target = "id", ignore = true)
     ManagerEntity managerDTOToManagerEntity(ManagerDTO managerDTO);
 
     ManagerDTO managerEntityToManagerDTO(ManagerEntity managerEntity);
@@ -20,6 +20,6 @@ public interface ManagerMapper {
     List<ManagerEntity> managerDTOListToManagerEntityList(List<ManagerDTO> managerDTOS);
 
     List<ManagerDTO> managerEntityListToManagerDTOList(List<ManagerEntity> managerEntities);
-
+    @Mapping(target = "id", ignore = true)
     ManagerEntity update(@MappingTarget ManagerEntity managerEntity, ManagerDTO managerDTO);
 }
