@@ -1,7 +1,6 @@
 package com.example.onlab_egyed_gabor.service.interfaces;
 
 import com.example.onlab_egyed_gabor.controller.dto.TeamDTO;
-import com.example.onlab_egyed_gabor.data.entities.TeamEntity;
 
 import java.util.List;
 

@@ -4,7 +4,6 @@ import com.example.onlab_egyed_gabor.controller.dto.TeamDTO;
 import com.example.onlab_egyed_gabor.data.entities.TeamEntity;
 import com.example.onlab_egyed_gabor.data.mapper.TeamMapper;
 import com.example.onlab_egyed_gabor.data.repository.TeamRepository;
-import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
