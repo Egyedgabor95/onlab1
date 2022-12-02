@@ -20,6 +20,6 @@ public interface GameMapper {
     List<GameEntity> gameDTOListToGameEntityList(List<GameDTO> gameDTOS);
 
     List<GameDTO> gameEntityListToGameDTOList(List<GameEntity> gameEntities);
-
+    @Mapping(target = "id", ignore = true)
     GameEntity update(@MappingTarget GameEntity gameEntity, GameDTO gameDTO);
 }
